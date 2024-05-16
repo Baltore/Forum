@@ -1,0 +1,42 @@
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #337ab7;
+}
+
+nav a:hover {
+  color: #23527c;
+}
+
+nav h2 {
+  margin-top: 0;
+  font-weight: bold;
+}
+
+nav ul ul {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+nav li:hover > ul {
+  display: block;
+}
+
+body {
+    background-color: #0b1622; 
+}
