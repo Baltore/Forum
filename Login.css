@@ -29,12 +29,12 @@
     box-sizing: border-box;
   }
   
-  .login-form input[type="submit"] {
+  .login-form input[type="Login"] {
     width: 100%;
-    padding: 10px;
-    background-color: #4CAF50;
+    padding: 7px;
+    background-color: #3DB4F2;
     color: white;
-    border: none;
+    border: 2cm;
     border-radius: 5px;
     cursor: pointer;
   }
@@ -44,5 +44,9 @@
   }
 
   body {
-    background-color: #0b1622; 
+    background-color: #0b1622;
+    border-color: black;
+}
+h3 {
+    color:white
 }
