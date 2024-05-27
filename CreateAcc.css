@@ -1,0 +1,84 @@
+.create-account-form input[type="submit"] {
+    background-color: #3DB4F2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+
+  .create-account-form input[type="submit"]:hover {
+    background-color: #3498db;
+  }
+
+/* Style général pour le corps */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #0b1622;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Style pour le conteneur de formulaire */
+.login-form, .create-account-form {
+  background-color: #151F2E;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+}
+
+h2 {
+  color: #FFFFFF;
+}
+
+/* Style pour les labels */
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555555;
+  text-align: left;
+}
+
+/* Style pour les champs de saisie */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #FFFFFF;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+/* Style pour le bouton de soumission */
+input[type="submit"] {
+  background-color: #3DB4F2;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #3498db;
+}
+
+/* Style pour le lien de création de compte */
+a {
+  color: #3DB4F2;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
