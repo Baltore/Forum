@@ -8,14 +8,22 @@
     <div class="login-form">
       <h2>Login</h2>
       <form>
+        <form id="loginForm" onsubmit="redirectToHome(event)">
         <label for="email">Email address/Username:</label><br>
         <input type="Email/Username" id="Email/Username" name="Email/Username" required><br>
         <label for="password">Password:</label><br>
         <input type="password" id="password" name="password" required><br>
-        <input type="Login" value="Login">
+        <input type="submit" value="Login">
       </form>
       <h3>Create an account</h3>
       <a href="Profile.html"></a>
     </div>
+    <script>
+      function redirectToHome(event) {
+        event.preventDefault(); // Prevent form submission
+        window.location.href = 'Home.html'; // Redirect to homepage
+      }
+    </script>
+
   </body>
 </html>
