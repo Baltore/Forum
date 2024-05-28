@@ -40,3 +40,40 @@ nav li:hover > ul {
 body {
     background-color: #0b1622; 
 }
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #181818;
+  color: #4285f4; /* Blue color for links */
+}
+
+header h1 {
+  margin: 0;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around; /* Distribute links evenly */
+  padding: 10px 0; /* Add some padding around the links */
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em 0;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #4285f4;
+}
+
+.header {
+  border: 2px solid #000; /* Bordure de 2 pixels de couleur noire */
+  padding: 20px; /* Espacement intérieur de l'en-tête */
+  text-align: center; /* Centrer le texte */
+  background-color: #f0f0f0; /* Couleur de fond de l'en-tête */
+  margin-bottom: 20px; /* Marge inférieure pour espacer l'en-tête du contenu suivant */
+}
