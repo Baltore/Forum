@@ -73,7 +73,44 @@ html,
 body {
   padding: 0;
   margin: 0;
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   overflow: hidden;
+  background: url('bleach.gif') no-repeat center center fixed;
+  background-size: cover;    
 }
 
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #152232;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {
+  background-color: #152232;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown:hover .dropbtn {
+  background-color: #152232;
+}
+.dropbtn {
+  background-color: #152232;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}

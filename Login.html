@@ -6,17 +6,24 @@
   </head>
   <body>
     <div class="login-form">
-      <h2>Login</h2>
-      <form>
-        <form id="loginForm" onsubmit="redirectToHome(event)">
-        <label for="email">Email address/Username:</label><br>
-        <input type="Email/Username" id="Email/Username" name="Email/Username" required><br>
-        <label for="password">Password:</label><br>
-        <input type="password" id="password" name="password" required><br>
-        <input type="submit" value="Login">
-      </form>
-      <h3>Create an account</h3>
-      <a href="CreateAcc.html"></a>
+      <div class="login-page">
+        <div class="form">
+          <form class="register-form">
+            <input type="text" placeholder="name"/>
+            <input type="password" placeholder="password"/>
+            <input type="text" placeholder="email address"/>
+            <button>create</button>
+            <p class="message">Already registered? <a href="#">Sign In</a></p>
+          </form>
+          <form class="login-form">
+            <input type="text" placeholder="username"/>
+            <input type="password" placeholder="password"/>
+            <button>login</button>
+            <p class="message">Not registered? <a href="#">Create an account</a></p>
+            <a href="CreateAcc.html"></a>
+          </form>
+        </div>
+      </div>
     </div>
     <script>
       function redirectToHome(event) {
@@ -26,6 +33,9 @@
       function redirectToCreateAccount() {
       window.location.href = 'CreateAcc.html'; // Redirect to create account page
     }
+    $('.message a').click(function(){
+   $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+});
     </script>
   </body>
 </html>
