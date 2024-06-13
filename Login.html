@@ -16,22 +16,23 @@
             <p class="message">Already registered? <a href="#">Sign In</a></p>
           </form>
           <form class="login-form">
-            <input type="text" placeholder="username"/>
+            <input type="text" placeholder="username/email"/>
             <input type="password" placeholder="password"/>
-            <button>login</button>
-            <p class="message">Not registered? <a href="#">Create an account</a></p>
-            <a href="CreateAcc.html"></a>
+            <button type="button" id="login-button">login</button>
+            <p class="message">Not registered? <a id="create-account-link" href="#">Create an account</a></p>
           </form>
         </div>
       </div>
     </div>
     <script>
-      function redirectToCreateAccount() {
-      window.location.href = 'CreateAcc.html'; // Redirect to create account page
-    }
-    $('.message a').click(function(){
-   $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
-});
+        document.getElementById('create-account-link').addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent the default action
+            window.location.href = 'CreateAcc.html'; // Redirect to create account page
+        });
+
+        document.getElementById('login-button').addEventListener('click', function() {
+            window.location.href = 'Home.html'; // Redirect to home page
+        });
     </script>
   </body>
 </html>
