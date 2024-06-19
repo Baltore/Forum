@@ -7,7 +7,7 @@ import (
 	_ "github.com/mattn/go-sqlite3"
 )
 
-// on handle l'integralité des dossier, templates et des differents composants pour notre serveur
+// on handle l'integralité des dossier, pagehtml et des differents composants pour notre serveur
 func Setup() {
 	http.Handle("/PageCSS/", http.StripPrefix("/PageCSS/", http.FileServer(http.Dir("./PageCSS/"))))
 	http.Handle("/JS/", http.StripPrefix("/JS/", http.FileServer(http.Dir("./JS/"))))

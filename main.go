@@ -1,6 +1,6 @@
 package main
 
-import Server "module/go"
+import Server "forum/go"
 
 func main() {
 	Server.Setup()
