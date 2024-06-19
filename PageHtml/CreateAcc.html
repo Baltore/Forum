@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../PageCSS/CreateAcc.css">
+</head>
+<body>
+  <div class="create-account-form">
+    <h2>Create an Account</h2>
+    <form id="createAccountForm" action="/pages/register" method="post">
+      <label for="new-username">Username : </label><br>
+      <input type="text" placeholder="Identifiant" name="new-username" id="new-username" onkeyup="check();" required=""><br>
+      <label for="new-email">Email address : </label><br>
+      <input type="email" placeholder="Email" name="new-email" required="" onkeyup="check();" id="new-email"><br>
+      <label for="new-password">Password : </label><br>
+      <input type="password" name="new-password" id="new-password" onkeyup="check();" required=""><br>
+      <input type="submit" value="Create Account">
+    </form>
+  </div>
+
+  <script>
+    function handleAccountCreation(event) {
+      event.preventDefault(); // Prevent form submission
+      alert('Account created successfully!');
+      // Here you would typically handle account creation (e.g., send data to the server)
+      window.location.href = 'Home.html'; // Redirect to homepage after account creation
+    }
+  </script>
+</body>
+
+  <footer>
+    <script src="../JS/register.js"></script>
+  </footer>
+</html>

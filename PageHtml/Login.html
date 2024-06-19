@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>Yume Nexus</title>
+    <link rel="stylesheet" href="../PageCSS/Login.css">
+  </head>
+  <body>
+    <div class="login-form">
+      <div class="login-page">
+        <div class="form">
+          <form class="register-form" action="/pages/register" method="post">
+            <input type="text" placeholder="Identifiant" name="identifiant" id="identifiant" onkeyup="check();" required="" />
+            
+            <input type="password" name="password" id="confirm_password" onkeyup="check();" required="">
+            <input type="text" placeholder="Email" name="email" required="" onkeyup="check();" id="email">
+            <button>create</button>
+            <p class="message">Already registered? <a href="#">Sign In</a></p>
+          </form>
+          <form action="/pages/login" method="post" class="login-form">
+            <input type="text" id="email" placeholder="username/email" name="email" required="" />
+            <input type="password" id="password" placeholder="password" name="password" required=""/>
+            <span id="message" class="msg_d"></span><br><br>
+            <button type="button" id="login-button">login</button>
+            <p class="message">Not registered? <a id="create-account-link" href="#">Create an account</a></p>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script>
+        document.getElementById('create-account-link').addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent the default action
+            window.location.href = 'CreateAcc.html'; // Redirect to create account page
+        });
+
+        document.getElementById('login-button').addEventListener('click', function() {
+            window.location.href = 'Home.html'; // Redirect to home page
+        });
+    </script>
+  </body>
+  <footer>
+    <footer>
+      <script src="../JS/login.js"></script>
+      <script src="https://apis.google.com/js/platform.js" async defer></script>
+      <script src="../JS/login.js"></script>
+      <script src="../JS/register.js"></script>
+  </footer>
+</html>
+
+
+<form action="/pages/register" method="post"
+
+               <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Email" name="email" required="" onkeyup="check();" id="email"
+                    style="width: 430px;padding: 15px;margin: 5px 0px 22px;border: medium none;background: rgb(241, 241, 241) none repeat scroll 0% 0%;--darkreader-inline-border-top: currentcolor;--darkreader-inline-border-right: currentcolor;--darkreader-inline-border-bottom: currentcolor;--darkreader-inline-border-left: currentcolor;--darkreader-inline-bgcolor: #1a1c1d;--darkreader-inline-bgimage: none;">
+
+                <label for="psw">
+                    <b>Password</b>
+                    <input type="password" id="password" onkeyup="check();" required=""
+                        style="width: 430px;padding: 15px;margin: 5px 0px 22px;border: medium none;background: rgb(241, 241, 241) none repeat scroll 0% 0%;--darkreader-inline-border-top: currentcolor;--darkreader-inline-border-right: currentcolor;--darkreader-inline-border-bottom: currentcolor;--darkreader-inline-border-left: currentcolor;--darkreader-inline-bgcolor: #1a1c1d;--darkreader-inline-bgimage: none;">
+
+                    <b>Confirm Password</b>
+                    <input type="password" name="password" id="confirm_password" onkeyup="check();" required=""
+                        style="width: 430px;padding: 15px;margin: 5px 0px 22px;border: medium none;background: rgb(241, 241, 241) none repeat scroll 0% 0%;--darkreader-inline-border-top: currentcolor;--darkreader-inline-border-right: currentcolor;--darkreader-inline-border-bottom: currentcolor;--darkreader-inline-border-left: currentcolor;--darkreader-inline-bgcolor: #1a1c1d;--darkreader-inline-bgimage: none;">
+                    <span id="message" style="width: 70px;overflow: hidden;white-space: nowrap;"></span>
+                </label>
+                <p class="custom_checkbox error" style="width: 29em;">
+                    <input type="checkbox" name="inscription_check" id="inscription_check" value="1" disabled>
+                    <label for="inscription_check" style="padding-right: 25px;margin-right: 17px;">I accept the
+                        conditions of use</label>
+                </p>
+                <button type="submit" id="submit"
+                    style="background-color: rgb(4, 104, 170);color: white;padding: 16px 20px;border: medium none;cursor: pointer;width: 425px;margin-bottom: 10px;opacity: 0.8;--darkreader-inline-bgcolor: #02426d;--darkreader-inline-color: #bab8b6;--darkreader-inline-border-top: currentcolor;--darkreader-inline-border-right: currentcolor;--darkreader-inline-border-bottom: currentcolor;--darkreader-inline-border-left: currentcolor;">Register</button>
+            </form>
+        </div>
+    </login>
+</body>
+<footer>
+    <script src="../assets/js/register.js"></script>
+</footer>
+
+</html>
