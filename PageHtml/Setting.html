@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../PageCSS/Setting.css">
+    <title>Yume Nexus</title>
+</head>
+<body>
+    <h1>User Settings :</h1>
+    <form action="/settings" method="POST">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" value="" required>
+        <br>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" value="" required>
+        <br>
+        <label for="bio">Bio:</label>
+        <textarea id="bio" name="bio"></textarea>
+        <br>
+        <button type="submit">Save Changes</button>
+    </form>
+
+    <script>
+        document.getElementById('Save Changes').addEventListener('click', function() {
+            window.location.href = 'Home.html'; // Redirect to home page
+        });
+    </script>
+</body>
+</html>
