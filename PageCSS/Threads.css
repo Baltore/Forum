@@ -60,3 +60,10 @@ body {
     background: url('bleach.gif') no-repeat center center fixed;
   background-size: cover;    
 }
+a {
+  color: aqua;
+  text-align: center;
+}
+p {
+  color: rgb(233, 233, 242);
+}
