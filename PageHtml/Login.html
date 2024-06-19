@@ -2,22 +2,16 @@
 <html>
   <head>
   <title>Yume Nexus</title>
-    <link rel="stylesheet" href="Login.css">
+    <link rel="stylesheet" href="../PageCSS/Login.css">
   </head>
   <body>
     <div class="login-form">
       <div class="login-page">
         <div class="form">
-          <form class="register-form">
-            <input type="text" placeholder="name"/>
-            <input type="password" placeholder="password"/>
-            <input type="text" placeholder="email address"/>
-            <button>create</button>
-            <p class="message">Already registered? <a href="#">Sign In</a></p>
-          </form>
-          <form class="login-form">
-            <input type="text" placeholder="username/email"/>
-            <input type="password" placeholder="password"/>
+          <form action="/pages/login" method="post" class="login-form">
+            <input type="text" id="email" placeholder="username/email" name="email" required="" />
+            <input type="password" id="password" placeholder="password" name="password" required=""/>
+            <span id="message" class="msg_d"></span><br><br>
             <button type="button" id="login-button">login</button>
             <p class="message">Not registered? <a id="create-account-link" href="#">Create an account</a></p>
           </form>
@@ -35,4 +29,11 @@
         });
     </script>
   </body>
+  <footer>
+    <footer>
+      <script src="../JS/login.js"></script>
+      <script src="https://apis.google.com/js/platform.js" async defer></script>
+      <script src="../JS/login.js"></script>
+      <script src="../JS/register.js"></script>
+  </footer>
 </html>
